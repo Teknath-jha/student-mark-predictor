@@ -23,6 +23,7 @@
             border-color: #f6b93b !important;
             transition: all 0.4s ease 0s;
         }
+        
     </style>
 </head>
 <body>
@@ -35,12 +36,12 @@
         <center>
             <form action="{{ url_for('predict')}}" method="POST">
                 <h1> Enter your study hours to predict Marks</h1>
-                <input align="center" type="number" name="study_hours" placeholder="study hours" required="required" width="48" height="48">
+                <input class="button_css" align="center" type="number" name="study_hours" placeholder="study hours" required="required" width="48" height="48">
                 <br><br>
                 
                 <div class="button_cont" algn="center">
                 
-                    <button type="submit" class="button"><strong>Predict Mark</strong></button>
+                    <button type="submit" class="button_css"><strong>Predict Mark</strong></button>
                 </div>
 
             </form>
