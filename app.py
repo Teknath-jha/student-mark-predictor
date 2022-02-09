@@ -29,6 +29,9 @@ def predict():
 
     output = model.predict([features_value])[0][0].round(2)
 
+    if output >99.99 :
+        output = 99.99
+
     df = pd.concat([df,pd.DataFrame({'Study Hours':input_features,'Predicate Output':[output]})] , ignore_index=True)
     print(df)
     # store data for further 
